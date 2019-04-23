@@ -165,5 +165,5 @@ for i in range(len(y_test)):
 from sklearn.metrics import f1_score
 y_true = np.argmax(y_one_hot, axis = 1)
 y_pred = np.argmax(pred, axis = 1)
-f1_score(y_true, y_pred, average = 'macro')
+print(f1_score(y_true, y_pred, average = 'macro'))
 
